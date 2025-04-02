@@ -38,9 +38,9 @@ export class Event extends Document {
   @Prop({ enum: Protocol }) protocol: Protocol;
   @Prop({ enum: Result }) result: Result;
 
-  @Prop() loginAt: Date;
-  @Prop() occurredAt: Date;
-  @Prop() savedAt: Date;
+  @Prop() loginAt: number;
+  @Prop() occurredAt: number;
+  @Prop() savedAt: number;
 }
 
 export const EventSchema = SchemaFactory.createForClass(Event);

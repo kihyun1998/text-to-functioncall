@@ -36,7 +36,7 @@ export class CreateEventDto {
   @IsOptional() @IsEnum(Protocol) protocol?: Protocol;
   @IsOptional() @IsEnum(Result) result?: Result;
 
-  @IsOptional() @IsDate() loginAt?: Date;
-  @IsOptional() @IsDate() occurredAt?: Date;
-  @IsOptional() @IsDate() savedAt?: Date;
+  @IsOptional() @IsDate() loginAt?: number;
+  @IsOptional() @IsDate() occurredAt?: number;
+  @IsOptional() @IsDate() savedAt?: number;
 }
