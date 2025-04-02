@@ -53,4 +53,8 @@ export class EventService {
 
     await this.eventModel.insertMany(fakeEvents);
   }
+
+  async findAll(): Promise<Event[]> {
+    return this.eventModel.find().exec();
+  }
 }
